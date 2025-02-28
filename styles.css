@@ -1,0 +1,972 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background: #34495e; /* Professional dark slate blue */
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle professional shadow */
+}
+
+header .logo img {
+    height: 50px;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    background: url('assets/images/hero-background.jpg') center center/cover no-repeat; /* Changed from green (#28a745) */
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+    overflow: hidden; /* added to confine the home section photo */
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.hero .btn {
+    background-color: white;
+    color: #28a745;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* About Section */
+.about {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Updated Services Section with professional pastel colors */
+.services {
+    padding: 60px 0;
+    background: linear-gradient(135deg, #e6f7ff, #d0eaff); /* Pastel blue gradient */
+}
+
+.services h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #005580; /* Darker blue for contrast */
+}
+
+.service-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+}
+
+.service-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.learn-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007bff;
+    font-size: 0.9em;
+}
+
+/* Contact Section */
+.contact {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact form input,
+.contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact form button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #34495e; /* Matching the header's professional dark slate blue */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+.logo-image {
+    width: 150px;  
+    height: 150px; 
+    border-radius: 20px;  /* Changed from 50% to 20px for a rounded look */
+    object-fit: cover;
+    border: 3px solid white; /* White border for better contrast */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for a professional look */
+}
+
+.logo-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Optional: add a subtle border */
+.logo {
+    padding: 5px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.social-icon {
+    color: white;
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
+/* Specific colors for each social media icon on hover */
+.fa-linkedin:hover {
+    color: #0077b5;
+}
+
+.fa-whatsapp:hover {
+    color: #25D366;
+}
+
+.fa-facebook:hover {
+    color: #1877f2;
+}
+
+/* Mobile Menu Button */
+.mobile-menu-btn {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+}
+
+.mobile-menu-btn span {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+}
+
+/* New: Styles for the close menu button */
+.close-menu-btn {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    display: none;
+}
+.nav-menu.active .close-menu-btn {
+    display: block;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    /* Header */
+    header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .mobile-menu-btn {
+        display: flex;
+        z-index: 1000;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background-color: #34495e; /* Updated to match header color */
+        padding: 80px 20px;
+        transition: right 0.3s ease;
+        z-index: 1001; /* Ensures the menu overlays other content */
+    }
+
+    .nav-menu.active {
+        right: 0;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 15px 0;
+    }
+
+    .social-icons {
+        margin-top: 20px;
+    }
+
+    /* Services Section */
+    .service-list {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .service-item {
+        width: 100%;
+    }
+
+    /* Hero Section */
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    /* About and Services sections */
+    .about h2,
+    .services h2 {
+        font-size: 2rem;
+    }
+
+    /* Logo */
+    .logo-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    /* Container */
+    .container {
+        width: 95%;
+        padding: 0 10px;
+    }
+}
+
+/* Small devices */
+@media screen and (max-width: 480px) {
+    .hero {
+        padding: 60px 0;
+    }
+
+    .about,
+    .services,
+    .contact {
+        padding: 40px 0;
+    }
+
+    .contact form {
+        width: 100%;
+    }
+}
+
+/* Success Stories Section */
+.success {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+.success h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.success-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.success-item {
+    position: relative;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.success-item:hover {
+    transform: translateY(-5px);
+}
+
+.success-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.success-content {
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.success-item:hover .success-content {
+    transform: translateY(0);
+}
+
+.success-content h3 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.success-content p {
+    font-size: 0.9rem;
+    margin: 0;
+    opacity: 0.9;
+}
+
+.date-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(40, 167, 69, 0.9);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    z-index: 1;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    overflow-y: auto;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.service-details {
+    padding: 20px 0;
+}
+
+.service-details h3 {
+    margin: 20px 0 10px;
+    color: #333;
+}
+
+.service-details ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.service-details li {
+    margin: 10px 0;
+    padding-left: 25px;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #007bff;
+}
+
+/* Responsive Design for Success Gallery */
+@media screen and (max-width: 1200px) {
+    .success-gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .success-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .success-gallery {
+        grid-width: 100%;
+    }
+}
+
+/* Thank You Page Styles */
+.thank-you {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.thank-you-content {
+    background: white;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.thank-you-content i.fa-check-circle {
+    font-size: 4rem;
+    color: #28a745;
+    margin-bottom: 1rem;
+}
+
+.thank-you-content h1 {
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.thank-you-content p {
+    color: #666;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.thank-you-content .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.thank-you-content .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Contact Form Confirmation Message */
+.confirmation-message {
+    display: none;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.confirmation-message i {
+    color: #28a745;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.confirmation-message h3 {
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.confirmation-message p {
+    color: #666;
+    margin: 0;
+}
+
+/* Password Protection Form */
+#password-form {
+    max-width: 400px;
+    margin: 0 auto 2rem;
+    text-align: center;
+}
+
+#password-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.error-message {
+    color: #dc3545;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+}
+
+.contact-info {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.contact-methods {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contact-button.email {
+    background-color: #EA4335;
+    color: white;
+}
+
+.contact-button.whatsapp {
+    background-color: #25D366;
+    color: white;
+    margin-left: 15px;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 480px) {
+    .contact-methods {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .contact-button.whatsapp {
+        margin-left: 0;
+    }
+}
+
+.why-choose-me {
+    text-align: center;
+  }
+  
+  .why-choose-me ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .why-choose-me ul li {
+    display: inline-block;
+    text-align: left;
+    margin: 10px 0;
+  }
+
+  .blog-insights {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+    text-align: center;
+  }
+  
+  .blog-insights h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .blog-insights p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .blog-insights ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .blog-insights ul li {
+    font-size: 1rem;
+    color: #333;
+    margin: 10px 0;
+  }
+  .hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.5; /* Adjust opacity as needed */
+}
+
+.hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1, .hero h2, .hero p, .hero h3, .hero .btn {
+    position: relative;
+    z-index: 1;
+}
+img {
+    display: block !important;
+    visibility: visible !important;
+}
+
+/* Professional Testimonials Section */
+.testimonials.professional {
+    padding: 80px 0;
+    background-color: #f4f7f9; /* Light, subtle background */
+    text-align: center;
+}
+
+.testimonials.professional h2 {
+    font-size: 2.8rem;
+    margin-bottom: 50px;
+    color: #2c3e50; /* Professional dark blue-gray */
+    font-weight: 700;
+}
+
+.testimonials.professional .testimonial-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimonials.professional .testimonial-item {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    border-left: 4px solid #28a745; /* Accent border */
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonials.professional .testimonial-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.16);
+}
+
+.testimonials.professional .testimonial-item p {
+    font-size: 1.1rem;
+    color: #555; /* Darker grey for body text */
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.testimonials.professional .testimonial-author {
+    font-style: normal;
+    font-weight: 600;
+    color: #2c3e50; /* Dark blue-gray for author */
+    font-size: 1rem;
+    text-align: right;
+    margin-top: 20px;
+    position: relative;
+    padding-right: 20px;
+}
+
+.testimonials.professional .testimonial-author::before {
+    content: "\2014"; /* Em dash */
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #95a5a6; /* Light grey for em dash */
+}
+
+/* Responsive adjustments for testimonials */
+@media screen and (max-width: 768px) {
+    .testimonials.professional .testimonial-item {
+        padding: 30px;
+    }
+}
+
+/* New styles for About Me section */
+.about-professional {
+    background: linear-gradient(135deg, #ffdead, #f0e68c); /* Warm gradient background */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 50px;
+    text-align: left;
+}
+.about-professional h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #d2691e; /* Heading color */
+}
+.about-details {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+    text-align: left;
+}
+.about-image {
+    flex: 1 1 250px;
+    text-align: center;
+}
+.about-image img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 50%;
+}
+.about-text {
+    flex: 2 1 300px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #8b4513; /* Text color */
+    text-align: left;
+}
+
+/* Updated styles for Why Choose Me section with professional colors */
+.why-professional {
+    background: linear-gradient(135deg, #eef2f7, #ffffff); /* Subtle blue-gray gradient */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 50px;
+    text-align: center;
+}
+.why-professional h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #2c3e50; /* Professional dark blue-gray */
+}
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+.why-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    border: 1px solid #dee2e6; /* Subtle professional border */
+}
+.why-item:hover {
+    transform: translateY(-5px);
+}
+.why-item i {
+    font-size: 2rem;
+    color: #28a745; /* Green color for icons */
+    margin-bottom: 10px;
+}
+.why-item p {
+    font-size: 1rem;
+    color: #333;
+    margin: 0;
+}
+
+/* New styles for professional Blog & Insights section */
+.blog-insights-professional {
+    background-color: #fff;
+    padding: 60px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 50px;
+}
+.blog-insights-professional h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+.blog-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+.blog-card:hover {
+    transform: translateY(-5px);
+}
+.blog-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.blog-content {
+    padding: 20px;
+}
+.blog-content h3 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: #333;
+}
+.blog-content p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+.blog-content .btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+.blog-content .btn:hover {
+    background-color: #218838;
+}
